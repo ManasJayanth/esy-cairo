@@ -35,7 +35,7 @@
     "esy-libpng": "esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048",
     "esy-pixman": "esy-packages/esy-pixman#c23d29008247aeed69e20df4efc830906d553ff5",
     "esy-freetype2": "esy-packages/esy-freetype2#133a36d867b0d5d769ec5c372131c88509144886",
-    "esy-bzip2": "esy-packages/esy-bzip2#e58d8f7a7b4563b97d3165ddbd279eb856dc5d0a"
+    "esy-bzip2": "esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7"
   },
   "resolutions": {}
 }
