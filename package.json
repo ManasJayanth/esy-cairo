@@ -1,0 +1,39 @@
+{
+  "name": "esy-cairo",
+  "version": "1.16.000",
+  "description": "cairo-1.16.0 packaged for esy",
+  "esy": {
+    "buildsInSource": true,
+    "exportedEnv": {
+      "PKG_CONFIG_PATH": {
+        "scope": "global",
+        "val": "#{self.lib / 'pkgconfig' :  }"
+      }
+    },
+    "build": [
+      [
+        "chmod",
+        "755",
+        "./configure"
+      ],
+      [
+        "bash",
+        "-c",
+        "./configure FREETYPE_CFLAGS=-I$FREETYPE2_INCLUDE_PATH FREETYPE_LIBS='-L$FREETYPE2_LIB_PATH -lfreetype' --prefix=#{self.install} #{os == 'windows' ? '--host=x86_64-w64-mingw32' : ''}"
+      ],
+      [
+        "make"
+      ],
+      [
+        "make",
+        "install"
+      ]
+    ]
+  },
+  "dependencies": {
+    "esy-libpng": "esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048",
+    "esy-pixman": "esy-packages/esy-pixman#c23d29008247aeed69e20df4efc830906d553ff5",
+    "esy-freetype2": "esy-packages/esy-freetype2#133a36d867b0d5d769ec5c372131c88509144886"
+  },
+  "resolutions": {}
+}
