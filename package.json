@@ -7,7 +7,7 @@
     "exportedEnv": {
       "PKG_CONFIG_PATH": {
         "scope": "global",
-        "val": "#{self.lib / 'pkgconfig' :  }"
+        "val": "#{self.lib / 'pkgconfig' : $PKG_CONFIG_PATH }"
       }
     },
     "build": [
@@ -20,7 +20,7 @@
       [
         "bash",
         "-c",
-        "./configure FREETYPE_CFLAGS=-I$FREETYPE2_INCLUDE_PATH FREETYPE_LIBS='-L$FREETYPE2_LIB_PATH -lfreetype' --prefix=#{self.install} #{os == 'windows' ? '--host=x86_64-w64-mingw32' : ''}"
+        "./configure --prefix=#{self.install} #{os == 'windows' ? '--host=x86_64-w64-mingw32' : ''} FREETYPE_CFLAGS='-I$FREETYPE2_INCLUDE_PATH' FREETYPE_LIBS='-L$FREETYPE2_LIB_PATH -lfreetype' "
       ],
       [
         "make"
