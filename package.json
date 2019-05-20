@@ -38,7 +38,7 @@
     "esy-libpng": "esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048",
     "esy-pixman": "esy-packages/esy-pixman#c23d29008247aeed69e20df4efc830906d553ff5",
     "esy-freetype2": "prometheansacrifice/esy-freetype2#fc1496120a45f5e85640d2b72b41c6746efee442",
-    "esy-bzip2": "esy-packages/esy-bzip2#48cb318402fb7ebc41bda9acac1a592919f44cf7"
+    "esy-bzip2": "esy-packages/esy-bzip2#048f314334ae2e63b24082a7e4cfca4985b04028"
   },
   "resolutions": {}
 }
