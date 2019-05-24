@@ -11,7 +11,6 @@
       }
     },
     "buildEnv": {
-      "PKG_CONFIG_PATH": "#{esy-freetype2.lib / 'pkgconfig'}:$PKG_CONFIG_PATH"
     },
     "build": [
       "find ./ -exec touch -t 200905010101 {} +",
@@ -42,5 +41,6 @@
     "esy-fontconfig": "prometheansacrifice/esy-fontconfig#a2ad199b6e3390bc67457459520696311d96de46"
   },
   "resolutions": {
+     "esy-fontconfig": "prometheansacrifice/esy-fontconfig#9f874154f68ffdea5121d09b12ff5ec6edc6c222"
   }
 }
