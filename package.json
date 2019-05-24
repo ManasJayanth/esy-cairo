@@ -11,6 +11,8 @@
       }
     },
     "buildEnv": {
+      "PKG_CONFIG_PATH": "/usr/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH",
+      "LD_LIBRARY_PATH": "#{pcre.lib}:$LD_LIBRARY_PATH"
     },
     "build": [
       "find ./ -exec touch -t 200905010101 {} +",
@@ -38,9 +40,7 @@
     "esy-pixman": "esy-packages/esy-pixman#c23d29008247aeed69e20df4efc830906d553ff5",
     "esy-freetype2": "prometheansacrifice/esy-freetype2#3b4ec35325670f1a767362bb5e318897da86629b",
     "esy-bzip2": "esy-packages/esy-bzip2#048f314334ae2e63b24082a7e4cfca4985b04028",
-    "esy-fontconfig": "prometheansacrifice/esy-fontconfig#a2ad199b6e3390bc67457459520696311d96de46"
-  },
-  "resolutions": {
-     "esy-fontconfig": "prometheansacrifice/esy-fontconfig#9f874154f68ffdea5121d09b12ff5ec6edc6c222"
+    "esy-fontconfig": "prometheansacrifice/esy-fontconfig#9f874154f68ffdea5121d09b12ff5ec6edc6c222",
+    "pcre": "esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e"
   }
 }

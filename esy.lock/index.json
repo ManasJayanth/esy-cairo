@@ -1,5 +1,5 @@
 {
-  "checksum": "7ec8ce2d3c04f7354612a560087aad4a",
+  "checksum": "e7b50aab61694a290fb7ca893ce059de",
   "root": "esy-cairo@link-dev:./package.json",
   "node": {
     "pkg-config@github:prometheansacrifice/yarn-pkg-config#cc5b4f913cccee781461b16d49b902c84727e7ed@d41d8cd9": {
@@ -358,6 +358,7 @@
       },
       "overrides": [],
       "dependencies": [
+        "pcre@github:esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e@d41d8cd9",
         "esy-pixman@github:esy-packages/esy-pixman#c23d29008247aeed69e20df4efc830906d553ff5@d41d8cd9",
         "esy-libpng@github:esy-packages/esy-libpng#d846df4a8547b3299c7627773008bd97543d7048@d41d8cd9",
         "esy-freetype2@github:prometheansacrifice/esy-freetype2#3b4ec35325670f1a767362bb5e318897da86629b@d41d8cd9",
